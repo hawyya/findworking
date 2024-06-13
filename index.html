@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/outfit/outfit.css">
+    <title>FIND A PLACEE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper flex-adapt">
+     <div class="logo-wrapper">
+        <a href="/pages/main/index.html"><img src="/imgs/logo/Logosite2-1-e1697640843866.png" alt="" class="logo"></a>
+     </div>
+     <div class="ul-wrapper">
+        <ul class="ul-header">
+            <li class="li-header">new drops</li>
+            <li class="li-header"><a href="/pages/basket/basket.html" class="link">basket</a></li><sup class="top"></sup>
+            <li class="li-header li-out"><a class="link" href="/pages/main/index.html">← back</a></li>
+        </ul>
+     </div> 
+    </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="main-wrap">
+                <div class="no-flex">
+                <div class="text-wrapper">
+                <p class="text">u can create ur own outfit here :</p>
+                </div>
+                <div class="squares-wrapper">
+                    <div class="square-one">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="/imgs/clothes/ХУДИ-ПЕРЕД-1-350x350.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="/imgs/clothes/худиномер2-350x350.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="/imgs/clothes/OSNOVAsite1-680x680.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="/imgs/clothes/IMG_5303-680x680.jpg" alt=""></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="square-one two">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="/imgs/clothes/ДЖИНСЫзад2-350x350.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="/imgs/clothes/ШОРТЫ-ПЕРЕД-1-350x350.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="/imgs/clothes/ШОРТЫ-ПЕРЕД-1ауе-350x350.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="/imgs/clothes/ПЕРЕД-готовый-1-350x350.jpg" alt=""></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+    </main>
+    <footer class="footer-wrapper">
+        <div class="wrapper">
+        </div>
+    </footer>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Bebas Neue";
+    position: relative;
+}
+
+
+.wrapper{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1px;
+}
+
+.logo-wrapper{
+    margin-left: 50px;
+}
+
+.header{
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    height: 80px;
+    width: 150px;
+}
+
+.ul-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+
+}
+
+.ul-header{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.li-header{
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.li-out{
+    margin-left: 15px;
+}
+
+.top{
+    margin-left: -12px;
+}
+
+.li-header:after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(0, 0, 0);
+    transition: 700ms;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.li-header:hover:after{
+    width: 100%;
+}
+
+.li-header:active{
+    opacity: 60%;
+}
+
+.in-main-wrapper{
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    width: 100%;
+}
+
+.text-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.squares-wrapper{
+    margin-top: 50px;
+}
+
+.square-one{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;;
+}
+
+.no-flex{
+    display: block;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .two{
+    margin-bottom: 50px;
+  }
+
+  @media(max-width: 715px){
+    .flex-adapt{
+        display: block;
+    }
+
+    .ul-wrapper{
+        display: flex;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    
+    .ul-header{
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    
+    .text-wrapper{
+        margin-top: -35px;
+    }
+    
+    .li-header{
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+    }
+}
+
+@media(max-width: 600px){
+
+    .logo-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .flex-adapt{
+        display: block;
+    }
+
+    .ul-wrapper{
+        display: flex;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    
+    .ul-header{
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    
+    .text-wrapper{
+        margin-top: -35px;
+    }
+    
+    .li-header{
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+    }
+}
+    </style>
+    <script type="module" src="/pages/outfit/outfit.js">var swiper = new Swiper(".mySwiper", {});</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
